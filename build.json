@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "keystore": "yaposhka64.keystore",
+      "storePassword": "456569395",
+      "alias": "app-key",
+      "password": "456569395",
+      "keystoreType": ""
+    }
+  }
+}

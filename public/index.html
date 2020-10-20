@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+    <!-- <meta name="viewport" content="width=375,initial-scale=1.0"> -->
+    <!--  Head color  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#292F4C">
+    <!--  Iphone status bar color inherit  -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--  PWA preload Iphone   -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="<%= BASE_URL %>assets/branding/apple-preload.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>assets/branding/apple-preload.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>assets/branding/apple-preload.png" sizes="750x1334" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>assets/branding/apple-preload.png" sizes="640x1136" rel="apple-touch-startup-image" />
+    <!--  end  -->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Мобильное приложение сети ресторатов Япошка</title>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!--<script src="http://api-maps.yandex.ru/2.1/?apikey=2cbc392f-3a6b-4fc9-b6cc-981861c6c915&lang=ru-RU" type="text/javascript"></script>-->
+<% if (process.env.NODE_ENV === 'production') { %>
+<script type="text/javascript" src="<%= BASE_URL %>cordova.js"></script>
+<% } %>
+<!-- built files will be auto injected -->
+</body>
+</html>

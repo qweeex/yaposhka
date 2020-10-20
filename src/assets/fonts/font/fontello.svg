@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="-" unicode="&#xe804;" d="M2088-5h-1673v525h1673v-525z" horiz-adv-x="2500" />
+
+<glyph glyph-name="group-10" unicode="&#xe805;" d="M476 309h-114v42h114v117h46v-117h116v-42h-116v-118h-46v118z" horiz-adv-x="1000" />
+
+<glyph glyph-name="down-arrow-1" unicode="&#xe806;" d="M705-34c11 11 11 28 0 39l-339 339 339 339c11 11 11 28 0 39-10 10-28 10-38 0l-358-359c-6-5-8-11-8-19 0-6 2-14 8-19l358-358c10-12 28-12 38-1z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
