@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/www
 
 # local env files
 .env.local
@@ -21,8 +20,3 @@ yarn-error.log*
 *.sw?
 
 bin/*
-!/plugins
-!/plugins/android.json
-!/plugins/fetch.json
-plugins/*
-platforms/*

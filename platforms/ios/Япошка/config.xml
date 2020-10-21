@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sitecreative.yaposhka64" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Япошка</name>
+    <description>
+        Мобильное приложение сети ресторатов Япошка
+    </description>
+    <author email="site-creative@mail.ru" href="https://site-creative.ru/">
+        Веб студия Site-Creative
+    </author>
+    <content src="index.html" />
+    <icon src="/public/assets/branding/logo_575x575.png" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <splash height="960" src="public/assets/branding/ios/splash/Default@2x~iphone.png" width="640" />
+    <splash height="768" src="public/assets/branding/ios/splash/ipad landscape x1.png" width="1024" />
+    <splash height="1536" src="public/assets/branding/ios/splash/ipad landscape x2.png" width="2048" />
+    <splash height="480" src="public/assets/branding/ios/splash/ipad portrait x1.png" width="320" />
+    <splash height="1136" src="public/assets/branding/ios/splash/ipad Retina 4.png" width="640" />
+    <splash height="1024" src="public/assets/branding/ios/splash/iphone portrait ios 5,6 x1-1.png" width="768" />
+    <splash height="1536" src="public/assets/branding/ios/splash/iphone portrait ios 5,6 x2-1.png" width="2008" />
+    <splash height="2008" src="public/assets/branding/ios/splash/iphone portrait ios 5,6 x2.png" width="1536" />
+    <splash height="1024" src="public/assets/branding/ios/splash/iphone portrait x1.png" width="768" />
+    <splash height="1538" src="public/assets/branding/ios/splash/iphone portrait x2_2.png" width="2048" />
+    <splash height="2048" src="public/assets/branding/ios/splash/iphone portrait x2.png" width="1538" />
+    <splash height="1125" src="public/assets/branding/ios/splash/iPhone Xs_2.png" width="2436" />
+    <splash height="2436" src="public/assets/branding/ios/splash/iPhone Xs.png" width="1125" />
+    <splash height="1334" src="public/assets/branding/ios/splash/Retina HD 4.7.png" width="750" />
+    <splash height="1242" src="public/assets/branding/ios/splash/Retina HD 5.5_2.png" width="2208" />
+    <splash height="2208" src="public/assets/branding/ios/splash/Retina HD 5.5.png" width="1242" />
+    <icon height="16" src="public/assets/branding/ios/Icon-16.png" width="16" />
+    <icon height="20" src="public/assets/branding/ios/Icon-20.png" width="20" />
+    <icon height="29" src="public/assets/branding/ios/Icon-29.png" width="29" />
+    <icon height="32" src="public/assets/branding/ios/Icon-32.png" width="32" />
+    <icon height="40" src="public/assets/branding/ios/Icon-40.png" width="40" />
+    <icon height="48" src="public/assets/branding/ios/Icon-48.png" width="48" />
+    <icon height="50" src="public/assets/branding/ios/Icon-50.png" width="50" />
+    <icon height="55" src="public/assets/branding/ios/Icon-55.png" width="55" />
+    <icon height="57" src="public/assets/branding/ios/Icon-57.png" width="57" />
+    <icon height="58" src="public/assets/branding/ios/Icon-58.png" width="58" />
+    <icon height="60" src="public/assets/branding/ios/Icon-60.png" width="60" />
+    <icon height="64" src="public/assets/branding/ios/Icon-64.png" width="64" />
+    <icon height="72" src="public/assets/branding/ios/Icon-72.png" width="72" />
+    <icon height="76" src="public/assets/branding/ios/Icon-76.png" width="76" />
+    <icon height="80" src="public/assets/branding/ios/Icon-80.png" width="80" />
+    <icon height="87" src="public/assets/branding/ios/Icon-87.png" width="87" />
+    <icon height="88" src="public/assets/branding/ios/Icon-88.png" width="88" />
+    <icon height="100" src="public/assets/branding/ios/Icon-100.png" width="100" />
+    <icon height="114" src="public/assets/branding/ios/Icon-114.png" width="114" />
+    <icon height="120" src="public/assets/branding/ios/Icon-120.png" width="120" />
+    <icon height="128" src="public/assets/branding/ios/Icon-128.png" width="128" />
+    <icon height="144" src="public/assets/branding/ios/Icon-144.png" width="144" />
+    <icon height="152" src="public/assets/branding/ios/Icon-152.png" width="152" />
+    <icon height="167" src="public/assets/branding/ios/Icon-167.png" width="167" />
+    <icon height="172" src="public/assets/branding/ios/Icon-172.png" width="172" />
+    <icon height="180" src="public/assets/branding/ios/Icon-180.png" width="180" />
+    <icon height="196" src="public/assets/branding/ios/Icon-196.png" width="196" />
+    <icon height="216" src="public/assets/branding/ios/Icon-216.png" width="216" />
+    <icon height="256" src="public/assets/branding/ios/Icon-256.png" width="256" />
+    <icon height="512" src="public/assets/branding/ios/iTunesArtwork@1x.png" width="512" />
+    <icon height="1024" src="public/assets/branding/ios/iTunesArtwork@2x.png" width="1024" />
+    <icon height="1536" src="public/assets/branding/ios/iTunesArtwork@3x.png" width="1536" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="SplashScreen" value="none" />
+</widget>
