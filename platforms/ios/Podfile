@@ -2,7 +2,7 @@
 
 platform :ios, '10.0'
 
-target 'C:\Users\HP\Desktop\Project\yaposhka\platforms\ios\Япошка' do
-	project 'C:\Users\HP\Desktop\Project\yaposhka\platforms\ios\Япошка.xcodeproj'
+target 'yaposhka64' do
+	project 'yaposhka64.xcodeproj'
 
 end
