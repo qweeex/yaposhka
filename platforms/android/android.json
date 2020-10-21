@@ -22,6 +22,16 @@
             }
           ]
         }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
@@ -33,6 +43,9 @@
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     },
     "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.sitecreative.yaposhka64"
+    },
+    "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     }
   },
@@ -58,6 +71,7 @@
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-splashscreen": "5.0.4",
-    "cordova-plugin-device": "2.0.3"
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-vibration": "3.1.1"
   }
 }

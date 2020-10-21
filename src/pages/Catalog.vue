@@ -123,8 +123,10 @@
 
             if (catalogList <= 40) {
                 header?.classList.add('catalog-layout__header-dark');
+                header?.classList.add('header-backs');
             } else {
                 header?.classList.remove('catalog-layout__header-dark');
+                header?.classList.remove('header-backs');
             }
 
             if (catalogList <= 0) {

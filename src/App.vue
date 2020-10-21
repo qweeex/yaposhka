@@ -16,7 +16,8 @@
 
         public created(): void {
             console.log("app - started");
-            (window as any).vue = this.$root
+            (window as any).vue = this.$root;
         }
+
     }
 </script>

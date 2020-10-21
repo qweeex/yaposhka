@@ -15,6 +15,9 @@
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     }
   },
   "dependent_plugins": {}
