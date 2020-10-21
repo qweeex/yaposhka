@@ -413,7 +413,7 @@ input {
             margin-bottom: 35px;
             margin-top: 10px;
             position: sticky;
-            top: 60px;
+            top: calc(env(safe-area-inset-top) + 60px);
             background: #f4f5f8;
             z-index: 15;
 
@@ -677,7 +677,7 @@ input {
     background: #ffffff;
 
     &__product {
-        margin-top: 80px;
+        margin-top: calc(80px + env(safe-area-inset-top));
 
         .product-row {
             display: flex;
@@ -799,7 +799,7 @@ input {
 
         .form-inputs {
             margin-top: 34px;
-            padding-bottom: 120px;
+            padding-bottom: calc(120px + env(safe-area-inset-bottom));
 
             .input {
                 width: 100%;
@@ -897,7 +897,7 @@ input {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         transition: all 0.4s;
-
+        padding-bottom: env(safe-area-inset-bottom);
         .total-price {
             p {
                 font-weight: bold;
@@ -932,9 +932,9 @@ input {
     &__wrapper {
         text-align: center;
         background: #F4F5F8;
-        margin-top: 86px;
+        margin-top: calc(env(safe-area-inset-top) + 86px);
         border-top-left-radius: 30px;
-        padding-top: 40px;
+        padding-top: calc(env(safe-area-inset-top) + 40px);
 
         .block {
             .title {
@@ -1325,7 +1325,7 @@ input {
     &__wrapper {
         text-align: center;
         background: #F4F5F8;
-        margin-top: 86px;
+        margin-top: calc(86px + env(safe-area-inset-top));
         border-top-left-radius: 30px;
         //padding-top: 40px;
         position: fixed;
@@ -1436,7 +1436,7 @@ input {
 .sale-layout {
 
     &__wrapper {
-        padding-top: 80px;
+        padding-top: calc(env(safe-area-inset-top) + 80px);
         position: fixed;
         overflow-y: scroll;
         height: 100%;
@@ -1451,6 +1451,7 @@ input {
                 max-width: 100%;
                 height: auto;
                 border-radius: 27px;
+                width: 100%;
             }
         }
     }

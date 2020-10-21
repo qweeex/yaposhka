@@ -4,7 +4,7 @@
         <header-toolbar Title="" BackURL="/home"></header-toolbar>
         <div class="catalog-layout__list">
             <div class="list-img">
-                <img :src="'http://yaposhka64.ru' + this.CurrentCategory.image()" alt="">
+                <img :src="'https://yaposhka64.ru' + this.CurrentCategory.image()" alt="">
             </div>
             <div class="list-title">
                 <p>{{this.CurrentCategory.title()}}</p>
@@ -129,8 +129,10 @@
 
             if (catalogList <= 0) {
                 filter?.classList.add('list-filter__active');
+                header?.classList.add('header-backs');
             } else {
                 filter?.classList.remove('list-filter__active');
+                header?.classList.remove('header-backs');
             }
             if (catalogList <= -81) {
                 header?.classList.add('catalog-layout__header-fill');

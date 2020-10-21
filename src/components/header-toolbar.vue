@@ -7,6 +7,7 @@
         </div>
         <div class="header-title">
             <p>{{Title}}</p>
+          <p></p>
         </div>
         <div class="header-cart">
             <router-link to="/cart" class="header-cart__btn">

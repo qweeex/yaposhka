@@ -14,7 +14,9 @@
                 <a href="#" @click="(env) => OnClickLink(env, 'http://google.com')" class="about-link">Стать партнером</a>
             </div>
             <div class="about-dev">
-                <img src="assets/img/dev.png" alt="">
+                <a href="https://site-creative.ru" target="_blank">
+                  <img src="assets/img/dev.svg" alt="">
+                </a>
             </div>
         </div>
         <main-menu></main-menu>

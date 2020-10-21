@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
     <!-- <meta name="viewport" content="width=375,initial-scale=1.0"> -->
     <!--  Head color  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
     <meta name="theme-color" content="#292F4C">
     <!--  Iphone status bar color inherit  -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -25,7 +25,7 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
 </noscript>
 <div id="app"></div>
-<!--<script src="http://api-maps.yandex.ru/2.1/?apikey=2cbc392f-3a6b-4fc9-b6cc-981861c6c915&lang=ru-RU" type="text/javascript"></script>-->
+<script src="http://api-maps.yandex.ru/2.1/?apikey=d248cbd1-b850-4e17-a46d-959b63ca6ca4&lang=ru-RU" type="text/javascript"></script>
 <% if (process.env.NODE_ENV === 'production') { %>
 <script type="text/javascript" src="<%= BASE_URL %>cordova.js"></script>
 <% } %>
