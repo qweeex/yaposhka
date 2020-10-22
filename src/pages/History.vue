@@ -127,7 +127,7 @@
         private OnClickCloseOpenedHistory(env: Event): void {
             env.preventDefault()
             this.OpenHistoryItem = undefined
-            this.$forceUpdate()
+            this.$forceUpdate();
         }
 
         private GetOrdersList(): HistoryOrder[] {

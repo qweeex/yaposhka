@@ -51,6 +51,7 @@
                     DataRepository.CurrentCartBase.SetCountProductInCart(product.productID, product.count)
                 }
             }
+            this.$router.push('/cart')
         }
     }
 </script>

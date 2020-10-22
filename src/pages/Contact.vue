@@ -1,6 +1,6 @@
 <template>
     <div id="contact-page" class="contact-layout">
-        <header-toolbar Title="Контакты" BackURL="/home"></header-toolbar>
+        <header-toolbar Title="Контакты" BackURL="/home" MasterClass="header-def"></header-toolbar>
         <div class="contact-layout__wrapper">
             <div class="block-phone" v-if="CurrentPhone !== undefined">
                 <a :href="'tel:' + CurrentPhone">

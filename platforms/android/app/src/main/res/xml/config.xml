@@ -11,7 +11,7 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>Япошка</name>
+    <name>yaposhka64</name>
     <description>
         Мобильное приложение сети ресторатов Япошка
     </description>
@@ -19,7 +19,7 @@
         Веб студия Site-Creative
     </author>
     <content src="index.html" />
-    <icon src="/public/assets/branding/logo_575x575.png" />
+    <icon src="/public/assets/branding/ios/splash/Retina HD 5.5.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

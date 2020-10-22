@@ -3,6 +3,7 @@ body {
     background: #ffffff;
 }
 
+
 textarea {
     font-family: 'Circe', sans-serif;
     -webkit-appearance: none;
@@ -25,25 +26,23 @@ input {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: #f70012;
 }
+
 
 .main-layout {
     background: #ffffff;
     min-height: 100vh;
     max-width: 100vw;
-
     &__slider {
-        height: 320px;
+        min-height: 320px;
         max-width: 100vw;
         position: relative;
         overflow: hidden;
 
         .slider-wrapper {
             height: 100%;
-            max-width: 380px;
+            max-width: 100%;
             margin: 0px auto;
-            background-color: #f70012;
             position: relative;
 
             .slider-items {
@@ -56,10 +55,10 @@ input {
             .slide-item {
                 height: 100%;
                 display: inline-block;
-                width: 0px;
-                margin-right: 2000px;
-
+                margin-right: 0;
+                width: 100vw;
                 img {
+                    width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
@@ -148,7 +147,7 @@ input {
         width: 100%;
         background: url("../../../public/assets/img/Subtract.svg") center center no-repeat;
         background-size: cover;
-        height: 98px;
+        height: calc(98px + env(safe-area-inset-bottom));
 
         .toolbar-wrapper {
             display: flex;
@@ -1051,7 +1050,7 @@ input {
     }
 
     &__img {
-        margin-top: 60px;
+        margin-top: calc(env(safe-area-inset-top) + 60px);
         width: 100%;
         display: flex;
         align-items: center;
@@ -1155,7 +1154,7 @@ input {
             width: 90%;
             background: #FFFFFF;
             z-index: 600;
-            height: 95%;
+            height: calc(95% - (env(safe-area-inset-top) + env(safe-area-inset-bottom)));
             overflow: hidden;
             border-radius: 35px;
 
@@ -1321,22 +1320,22 @@ input {
 
 // Contact
 .contact-layout {
-
+    overflow: hidden;
     &__wrapper {
         text-align: center;
         background: #F4F5F8;
         margin-top: calc(86px + env(safe-area-inset-top));
         border-top-left-radius: 30px;
         //padding-top: 40px;
-        position: fixed;
+        position: absolute;
         overflow-y: scroll;
         min-width: 100vw;
-        height: 100%;
+        height: calc(100% - env(safe-area-inset-bottom));
 
         .block-city {
             text-align: center;
             background: #F4F5F8;
-            position: absolute;
+            position: relative;
             left: 0;
             top: 52px;
             width: 100vw;
@@ -1434,19 +1433,32 @@ input {
 
 // Sale
 .sale-layout {
-
+    overflow: hidden;
+    height: 100vh;
+    .sale-fixed{
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
     &__wrapper {
-        padding-top: calc(env(safe-area-inset-top) + 80px);
-        position: fixed;
+        //padding-top: calc(env(safe-area-inset-top) + 80px);
+        padding-bottom: env(safe-area-inset-bottom);
         overflow-y: scroll;
+        position: absolute;
+        left: 0;
+        top: calc(env(safe-area-inset-top) + 80px);
+        margin-top: calc(0 + env(safe-area-inset-top));
         height: 100%;
         width: 100%;
-
         .wrap-item {
             position: sticky;
             top: 0;
             padding-bottom: 30px;
-
+            margin: 15px;
+            display: block;
+            &:nth-child(1){
+                margin-top: 0 !important;
+            }
             img {
                 max-width: 100%;
                 height: auto;

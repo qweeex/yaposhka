@@ -6,6 +6,7 @@ import DataRepository from "@/repositories/data-repository";
 import {Route} from "vue-router";
 import UIRepository from "@/repositories/ui-repository";
 
+
 Vue.use(Vue2TouchEvents)
 Vue.config.productionTip = false
 

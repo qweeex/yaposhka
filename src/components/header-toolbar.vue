@@ -1,5 +1,5 @@
 <template>
-    <div id="header-toolbar-component" :class="(HasDark === '1' ? 'dark-mode' : '')">
+    <div id="header-toolbar-component" :class="(HasDark === '1' ? 'dark-mode' : '') + ' ' + MasterClass" >
         <div class="header-back">
             <a href="#" @click="OnClickBackButton" class="header-back__btn">
 
@@ -7,7 +7,6 @@
         </div>
         <div class="header-title">
             <p>{{Title}}</p>
-          <p></p>
         </div>
         <div class="header-cart">
             <router-link to="/cart" class="header-cart__btn">
@@ -35,6 +34,7 @@
         @Prop({default: ''}) readonly Title!: string
         @Prop({default: '/home'}) readonly BackURL!: string
         @Prop({default: '0'}) readonly HasDark!: string
+        @Prop({default: ''}) readonly MasterClass!: string
 
         // <editor-fold defaultstate="collapsed" desc="Vue Hooks">
         private created(): void {

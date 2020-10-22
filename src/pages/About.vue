@@ -3,7 +3,7 @@
         <header-toolbar BackURL="/home"></header-toolbar>
         <div class="about-layout__wrapper">
             <div class="about-logo">
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/logo_yaposhka.svg" alt="">
             </div>
             <div class="about-date">
                 <p>© 2020 ООО “Япошка”</p>
@@ -58,3 +58,10 @@
         }
     }
 </script>
+
+<style>
+  .about-logo img{
+    width: 173px;
+    height: auto;
+  }
+</style>

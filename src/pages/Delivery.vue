@@ -1,6 +1,6 @@
 <template>
     <div id="delivery-page" class="terms-layout">
-        <header-toolbar HasDark="1" Title="Условия" BackURL="/home"></header-toolbar>
+        <header-toolbar HasDark="1" Title="Условия" BackURL="/home" MasterClass="header-def"></header-toolbar>
         <div class="terms-layout__wrapper">
             <div class="block">
                 <p class="title">Доставка обедов в Энгельсе</p>

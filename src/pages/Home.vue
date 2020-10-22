@@ -3,16 +3,16 @@
         <div class="main-layout">
             <div class="main-layout__slider" v-touch:swipe.left="OnSwipeSlider" v-touch:swipe.right="OnSwipeSlider">
                 <div class="slider-wrapper">
-                    <div class="slider-items" :style="'left: ' + (CurrentSlide * -2000) + 'px'">
-                        <home-slide-item SlideImage="assets/img/slide.jpg" SlideID="2"></home-slide-item>
-                        <home-slide-item SlideImage="assets/img/slide.jpg" SlideID="3"></home-slide-item>
-                        <home-slide-item SlideImage="assets/img/slide.jpg" SlideID="4"></home-slide-item>
-                        <home-slide-item SlideImage="assets/img/slide.jpg" SlideID="5"></home-slide-item>
-                        <home-slide-item SlideImage="assets/img/slide.jpg" SlideID="6"></home-slide-item>
+                    <div class="slider-items" :style="'left: -' + (CurrentSlide * GetWidthDevice()) + 'px'">
+                        <home-slide-item
+                            v-for="(item) in GetSaleArray()"
+                            :SlideImage="item.mainSlide"
+                            :SlideID="item.mainSlide"
+                            :key="item.mainSlide"></home-slide-item>
                     </div>
-                </div>
-                <div class="slider-thumb">
+                  <div class="slider-thumb">
                     <span v-for="(item, index) in GetArrayFromSlideCount()" :key="index" :class="'slider-thumb__item' + (index === CurrentSlide ? ' item-active' : '')"></span>
+                  </div>
                 </div>
             </div>
             <div class="main-layout__menu">
@@ -35,6 +35,8 @@
     import UIRepository from "@/repositories/ui-repository";
     import ProductCategory from "@/struct/ProductCategory";
     import DataRepository from "@/repositories/data-repository";
+    import SaleItem from "@/struct/SaleItem";
+
 
     @Component({
         components: {HomeSlideItem, HomeCategoryItem, MainMenu, HomeFooterToolbar}
@@ -78,6 +80,14 @@
                 arr.push(true)
             }
             return arr
+        }
+
+        private GetSaleArray(): SaleItem[] {
+          return DataRepository.CurrentSaleArray;
+        }
+
+        private GetWidthDevice(): number{
+          return screen.width;
         }
 
         private GetProductCategories(): ProductCategory[] | undefined {

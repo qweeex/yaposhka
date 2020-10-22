@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "android": "vue-cli-service build && cordova build android",
+    "ios": "vue-cli-service build && cordova build ios"
   },
   "dependencies": {
     "@types/qs": "^6.9.2",
@@ -20,6 +22,7 @@
     "qs": "^6.9.4",
     "url-parse": "^1.4.7",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.1.6",

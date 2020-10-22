@@ -8,7 +8,7 @@
         Веб студия Site-Creative
     </author>
     <content src="index.html" />
-    <icon src="/public/assets/branding/logo_575x575.png" />
+    <icon src="/public/assets/branding/ios/splash/Retina HD 5.5.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -49,6 +49,8 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <preference name="UIWebViewBounce" value="false" />
+        <preference name="DisallowOverscroll" value="true" />
 
         <splash height="960" src="public/assets/branding/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="768" src="public/assets/branding/ios/splash/ipad landscape x1.png" width="1024" />
