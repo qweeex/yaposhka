@@ -7,16 +7,16 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     },
-    "cordova-plugin-device": {
+    "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     },
-    "cordova-plugin-vibration": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.sitecreative.yaposhka64"
     }
   },
